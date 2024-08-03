@@ -62,9 +62,9 @@ const Portfolio = () => {
   }, [location]);
 
   const projects = [
-    { id: 1, title: 'Project 1', description: 'A brief description of Project 1', href: '/project1' },
-    { id: 2, title: 'Project 2', description: 'A brief description of Project 2', href: '/project1' },
-    { id: 3, title: 'Project 3', description: 'A brief description of Project 3', href: '/project1' },
+    { id: 1, title: 'Project 1: DIO Vision', description: 'Survailance Hardware & Cloud Storage', href: '/project1', img: process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_22056eb79c8f4ef0ba12122310803868~mv2.png' },
+    { id: 2, title: 'Project 2', description: 'A brief description of Project 2', href: '/project2', img: process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_22056eb79c8f4ef0ba12122310803868~mv2.png' },
+    { id: 3, title: 'Project 3', description: 'A brief description of Project 3', href: '/project3', img: process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_22056eb79c8f4ef0ba12122310803868~mv2.png' },
   ];
 
   const skills = ['UI Design', 'UX Research', 'Prototyping', 'User Testing', 'UI Design', 
@@ -86,7 +86,7 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={`/api/placeholder/400/300`} alt={project.title} className="w-full h-48 object-cover" />
+              <img src={project.img} alt={project.title} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>

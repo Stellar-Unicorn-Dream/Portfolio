@@ -21,7 +21,7 @@ const Project1 = () => {
             </ul>
           </div>
           <div>
-            <img src="./Project 1 _ Portfolio_files/3e6d73_22056eb79c8f4ef0ba12122310803868~mv2.png" alt="DIOvision Logo" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_22056eb79c8f4ef0ba12122310803868~mv2.png'} alt="DIOvision Logo" className="w-full h-auto object-cover rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
@@ -48,7 +48,7 @@ const Project1 = () => {
             </ul>
           </div>
           <div>
-            <img src="/Project 1 _ Portfolio_files/3e6d73_f1fe22ffe71e4a108394df4d72a9981b~mv2.jpg" alt="My Role" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_f1fe22ffe71e4a108394df4d72a9981b~mv2.jpg'} alt="My Role" className="w-full h-auto object-cover rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ const Project1 = () => {
         <h2 className="text-3xl font-semibold mb-8">The Users</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="/Project 1 _ Portfolio_files/olexandr.png" alt="Volodymyr" className="w-full h-48 object-cover" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/olexandr.png'} alt="Volodymyr" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Volodymyr</h3>
               <p className="text-gray-600 mb-4">Private House Owner</p>
@@ -65,7 +65,7 @@ const Project1 = () => {
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="/Project 1 _ Portfolio_files/a91f25c7c6635454-sticker_edited.png" alt="Oleksandr" className="w-full h-48 object-cover" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/a91f25c7c6635454-sticker_edited.png'} alt="Oleksandr" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Oleksandr</h3>
               <p className="text-gray-600 mb-4">Big living complex inhabitant</p>
@@ -73,7 +73,7 @@ const Project1 = () => {
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="/Project 1 _ Portfolio_files/Olena.png" alt="Olena" className="w-full h-48 object-cover" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Olena.png'} alt="Olena" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Olena</h3>
               <p className="text-gray-600 mb-4">Old house inhabitant</p>
@@ -91,7 +91,7 @@ const Project1 = () => {
             <p className="text-lg mb-4">As a result, I compiled a table of positive and negative user experiences with the video surveillance system. Based on it, our team was able to prioritize product development directions and find the best solution to meet customer needs.</p>
           </div>
           <div>
-            <img src="/Project 1 _ Portfolio_files/8cd0b216d6dd4d52bd46d3afbb8cf020.jpg" alt="Analyzing the data" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/8cd0b216d6dd4d52bd46d3afbb8cf020.jpg'} alt="Analyzing the data" className="w-full h-auto object-cover rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
@@ -105,7 +105,7 @@ const Project1 = () => {
 
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-8">Design System</h2>
-        <img src="/Project 1 _ Portfolio_files/DESIGN%20SYSTEM%20DIOVISION.png" alt="Design System" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/DESIGN%20SYSTEM%20DIOVISION.png'} alt="Design System" className="w-full h-auto object-cover rounded-lg shadow-lg" />
       </section>
 
       <section className="mb-16">
@@ -113,21 +113,21 @@ const Project1 = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-2xl font-semibold mb-4">Challenge 01: Main Page</h3>
-            <img src="/Project 1 _ Portfolio_files/Screenshot%202024-04-09%20at%2023_36_25.png" alt="Main Page Challenge" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
-            <img src="/Project 1 _ Portfolio_files/Screenshot%202024-04-09%20at%2023_54_10.png" alt="Main Page Solution" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-09%20at%2023_36_25.png'} alt="Main Page Challenge" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-09%20at%2023_54_10.png'} alt="Main Page Solution" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
             <p className="text-lg">Initial design and updated design for the main page.</p>
           </div>
           <div>
             <h3 className="text-2xl font-semibold mb-4">Challenge 02: FAQ Page</h3>
-            <img src="/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2016_56_24.png" alt="FAQ Page" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2016_56_24.png'} alt="FAQ Page" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
             <p className="text-lg">Created a comprehensive FAQ page with easy navigation and search functionality.</p>
           </div>
         </div>
         <div className="mt-8">
           <h3 className="text-2xl font-semibold mb-4">Challenge 03: Pricing Tables</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <img src="/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2019_47_13.png" alt="Pricing Table 1" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-            <img src="/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2019_52_26.png" alt="Pricing Table 2" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2019_47_13.png'} alt="Pricing Table 1" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+            <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2019_52_26.png'} alt="Pricing Table 2" className="w-full h-auto object-cover rounded-lg shadow-lg" />
           </div>
           <p className="text-lg mt-4">Designed intuitive pricing tables for different video analytics services and cloud storage options.</p>
         </div>
@@ -136,13 +136,13 @@ const Project1 = () => {
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-8">Final Designs</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <img src="/Project 1 _ Portfolio_files/3e6d73_555d0ef029584d36800f68600a297ca9~mv2.png" alt="Final Design 1" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-          <img src="/Project 1 _ Portfolio_files/3e6d73_5b1790ff8c5d472e98c2bd31f7477b16~mv2.png" alt="Final Design 2" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-          <img src="/Project 1 _ Portfolio_files/3e6d73_5e45080a6d234fc48fc4e266b93931f3~mv2.png" alt="Final Design 3" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-          <img src="/Project 1 _ Portfolio_files/3e6d73_394dbd1bef4c442ea72607d6c1e378dc~mv2.png" alt="Final Design 4" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-          <img src="/Project 1 _ Portfolio_files/3e6d73_0ef6f8ba84764d61bb33974ab7e9b076~mv2.png" alt="Final Design 5" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-          <img src="/Project 1 _ Portfolio_files/3e6d73_6705089d75cf4fc6a6b7ee09d55538b9~mv2.png" alt="Final Design 6" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-          <img src="/Project 1 _ Portfolio_files/3e6d73_3cf4c03350c043a188eda827eb19ec1c~mv2.png" alt="Final Design 7" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+          <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_555d0ef029584d36800f68600a297ca9~mv2.png'} alt="Final Design 1" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+          <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_5b1790ff8c5d472e98c2bd31f7477b16~mv2.png'} alt="Final Design 2" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+          <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_5e45080a6d234fc48fc4e266b93931f3~mv2.png'} alt="Final Design 3" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+          <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_394dbd1bef4c442ea72607d6c1e378dc~mv2.png'} alt="Final Design 4" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+          <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_0ef6f8ba84764d61bb33974ab7e9b076~mv2.png'} alt="Final Design 5" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+          <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_6705089d75cf4fc6a6b7ee09d55538b9~mv2.png'} alt="Final Design 6" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+          <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_3cf4c03350c043a188eda827eb19ec1c~mv2.png'} alt="Final Design 7" className="w-full h-auto object-cover rounded-lg shadow-lg" />
         </div>
       </section>
 
