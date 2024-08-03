@@ -1,6 +1,52 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ABOUT_ME } from '../constants';
+
+const AnimatedButton = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <Link 
+      to="#contact" 
+      className="relative inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-all duration-300 ease-in-out"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="flex justify-center items-center h-full">
+        <span>Let's</span>
+        <span className="relative mx-1 overflow-hidden" style={{ width: '37px' }}> {}
+          <span 
+            className="inline-block transition-transform duration-300 ease-in-out"
+            style={{
+              transform: isHovered ? 'translateY(-100%)' : 'translateY(0)' 
+            }}
+          >
+            Work
+          </span>
+          <span 
+            className="absolute top-0 left-0 inline-block transition-transform duration-300 ease-in-out"
+            style={{
+              transform: isHovered ? 'translateY(0)' : 'translateY(100%)' 
+            }}
+          >
+            Rock
+          </span>
+        </span>
+        <span>Together</span>
+        <span 
+          className="ml-1 transition-all duration-300 ease-in-out"
+          style={{ 
+            opacity: isHovered ? 1 : 0,
+            transform: isHovered ? 'translateY(0)' : 'translateY(-10px)',
+            width: isHovered ? '20px' : '0px'
+          }}
+        >
+          🤘🏻
+        </span>
+      </div>
+    </Link>
+  );
+};
 
 const Portfolio = () => {
   const location = useLocation();
@@ -30,9 +76,9 @@ const Portfolio = () => {
   return (
     <>
       <section className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4">UI/UX Designer & Developer</h2>
+        <h2 className="text-4xl font-bold mb-4">UI/UX Designer & Multimedia Content Creator</h2>
         <p className="text-xl text-gray-600 mb-8">Crafting beautiful and intuitive digital experiences</p>
-        <Link to="#contact" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">Get in Touch</Link>
+        <AnimatedButton />
       </section>
 
       <section id="projects" className="mb-16">
