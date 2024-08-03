@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Stellar-Unicorn-Dream/Portfolio/static/css/main.626aecce.css",
+    "main.js": "/Stellar-Unicorn-Dream/Portfolio/static/js/main.dca5af32.js",
+    "index.html": "/Stellar-Unicorn-Dream/Portfolio/index.html",
+    "main.626aecce.css.map": "/Stellar-Unicorn-Dream/Portfolio/static/css/main.626aecce.css.map",
+    "main.dca5af32.js.map": "/Stellar-Unicorn-Dream/Portfolio/static/js/main.dca5af32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.626aecce.css",
+    "static/js/main.dca5af32.js"
+  ]
+}
