@@ -16,9 +16,9 @@ function App() {
               <Link to="/" className="text-2xl font-semibold">{NAME}</Link>
               <nav className="hidden md:flex space-x-8">
                 {NAVIGATION_ITEMS.map((item) => (
-                  <Link 
+                  <Link
                     key={item.name}
-                    to={item.href.startsWith('http') ? item.href : `/#${item.href}`} 
+                    to={item.href.startsWith('http') ? item.href : `/#${item.href}`}
                     className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                   >
                     {item.name}
@@ -32,9 +32,9 @@ function App() {
             {isMenuOpen && (
               <nav className="mt-4 md:hidden">
                 {NAVIGATION_ITEMS.map((item) => (
-                  <Link 
+                  <Link
                     key={item.name}
-                    to={item.href.startsWith('http') ? item.href : `/#${item.href}`} 
+                    to={item.href.startsWith('http') ? item.href : `/#${item.href}`}
                     className="block py-2 text-gray-600 hover:text-gray-900"
                     onClick={() => setIsMenuOpen(false)}
                   >
