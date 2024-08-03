@@ -75,11 +75,10 @@ const ProjectShowcase = () => {
                         {pages.map((page, index) => (
                             <button
                                 key={index}
-                                className={`px-3 py-1 rounded-full transition-colors text-sm ${
-                                    selectedPage.name === page.name
+                                className={`px-3 py-1 rounded-full transition-colors text-sm ${selectedPage.name === page.name
                                         ? 'bg-blue-500 text-white'
                                         : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                                }`}
+                                    }`}
                                 onClick={() => setSelectedPage(page)}
                             >
                                 {page.name}
@@ -117,6 +116,9 @@ const Project1 = () => {
                             autoPlay
                             muted
                             loop
+                            playsInline
+                            disablePictureInPicture
+                            controlsList="nodownload nofullscreen noremoteplayback"
                             className="w-full h-auto object-cover rounded-lg shadow-lg"
                         ></video>
                     </div>
