@@ -1,5 +1,96 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
+const pages = [
+    { name: "Entrance Surveillance", image: "/Project 1 _ Portfolio_files/Акція.png" },
+    { name: "Video Analytics", image: "/Project 1 _ Portfolio_files/Відеоаналітика.png" },
+    { name: "Number Plate Recognition", image: "/Project 1 _ Portfolio_files/Детектор автономерів.png" },
+    { name: "People Crowd Detection", image: "/Project 1 _ Portfolio_files/Детектор скупчення людей.png" },
+    { name: "Face Recognition", image: "/Project 1 _ Portfolio_files/Розпізнавання облич.png" },
+    { name: "ACS (Face Recognition Based)", image: "/Project 1 _ Portfolio_files/СКУД_на_базі_технології_розпізнавання_облич.png" },
+    { name: "Thermal Map", image: "/Project 1 _ Portfolio_files/Теплові мапи.png" },
+    { name: "School Surveillance", image: "/Project 1 _ Portfolio_files/шкіл.png" }
+];
+
+const LaptopDisplay = ({ imageSrc }) => {
+    const scrollRef = useRef(null);
+
+    useEffect(() => {
+        if (scrollRef.current) {
+            const startPosition = scrollRef.current.scrollTop;
+            const startTime = performance.now();
+            const duration = 300;
+
+            const animateScroll = (currentTime) => {
+                const elapsedTime = currentTime - startTime;
+                if (elapsedTime < duration) {
+                    const progress = elapsedTime / duration;
+                    const easeProgress = 1 - Math.pow(1 - progress, 3); // Cubic ease-out
+                    scrollRef.current.scrollTop = startPosition * (1 - easeProgress);
+                    requestAnimationFrame(animateScroll);
+                } else {
+                    scrollRef.current.scrollTop = 0;
+                }
+            };
+
+            requestAnimationFrame(animateScroll);
+        }
+    }, [imageSrc]);
+
+    return (
+        <div className="relative w-full max-w-4xl mx-auto">
+            <img
+                src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Desktop Semi-Realistic Dark.svg'}
+                alt="MacBook frame"
+                className="w-full h-auto"
+            />
+            <div className="absolute top-[5.8%] left-[11.5%] right-[11.5%] bottom-[8%] overflow-hidden">
+                <div ref={scrollRef} className="w-full h-full overflow-y-scroll">
+                    <img
+                        src={process.env.PUBLIC_URL + imageSrc}
+                        alt="Scrollable content"
+                        className="w-full h-auto"
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const ProjectShowcase = () => {
+    const [selectedPage, setSelectedPage] = useState(pages[0]);
+
+    return (
+        <section className="mb-16">
+            <h2 className="text-3xl font-semibold mb-8">Project Showcase</h2>
+
+            <div className="grid md:grid-cols-3 gap-8">
+                <div className="md:col-span-2">
+                    <LaptopDisplay imageSrc={selectedPage.image} />
+                </div>
+
+                <div className="flex flex-col justify-center">
+                    <h3 className="text-2xl font-semibold mb-4">Select Webpage</h3>
+                    <div className="flex flex-wrap gap-2">
+                        {pages.map((page, index) => (
+                            <button
+                                key={index}
+                                className={`px-3 py-1 rounded-full transition-colors text-sm ${
+                                    selectedPage.name === page.name
+                                        ? 'bg-blue-500 text-white'
+                                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                                }`}
+                                onClick={() => setSelectedPage(page)}
+                            >
+                                {page.name}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
 
 const Project1 = () => {
     return (
@@ -57,10 +148,10 @@ const Project1 = () => {
                         </ul>
                     </div>
                     <div>
-                        <img 
-                            src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_f1fe22ffe71e4a108394df4d72a9981b~mv2.jpg'} 
-                            alt="My Role" 
-                            className="w-full h-64 object-cover rounded-lg shadow-lg" 
+                        <img
+                            src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_f1fe22ffe71e4a108394df4d72a9981b~mv2.jpg'}
+                            alt="My Role"
+                            className="w-full h-64 object-cover rounded-lg shadow-lg"
                         />
                     </div>
                 </div>
@@ -195,6 +286,8 @@ const Project1 = () => {
                     <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_3cf4c03350c043a188eda827eb19ec1c~mv2.png'} alt="Final Design 7" className="w-full h-auto object-cover rounded-lg shadow-lg" />
                 </div>
             </section>
+
+            <ProjectShowcase />
 
             <section className="mb-16">
                 <h2 className="text-3xl font-semibold mb-8">Reflection</h2>
