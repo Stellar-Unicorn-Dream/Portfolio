@@ -13,9 +13,7 @@ const Project2 = () => {
                 <h2 className="text-3xl font-semibold mb-8">Project Overview</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     <div>
-                        <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-64 flex items-center justify-center">
-                            <span className="text-gray-500">Logo placeholder</span>
-                        </div>
+                        <img src={process.env.PUBLIC_URL + '/Project 2 _ Portfolio_files/DIMED-Logo-main.png'} alt="Dimed Logo" className="w-full h-auto rounded-lg shadow-lg" />
                     </div>
                     <div>
                         <p className="text-lg mb-4">
