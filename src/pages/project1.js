@@ -140,7 +140,7 @@ const Project1 = () => {
 
             <section className="mb-16">
                 <h2 className="text-3xl font-semibold mb-8">My Role</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                     <div>
                         <p className="text-lg mb-4">As the sole designer on the project, I took on a diverse set of responsibilities that extended beyond the realm of a traditional UI/UX designer:</p>
                         <ul className="list-disc list-inside space-y-2">
@@ -153,7 +153,7 @@ const Project1 = () => {
                         <img
                             src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/3e6d73_f1fe22ffe71e4a108394df4d72a9981b~mv2.jpg'}
                             alt="My Role"
-                            className="w-full h-64 object-cover rounded-lg shadow-lg"
+                            className="w-full h-80 object-cover rounded-lg shadow-lg"
                         />
                     </div>
                 </div>
@@ -248,7 +248,7 @@ const Project1 = () => {
 
             <section className="mb-16">
                 <h2 className="text-3xl font-semibold mb-8">Design System</h2>
-                <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/DESIGN%20SYSTEM%20DIOVISION.png'} alt="Design System" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+                <img                 src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/DESIGN SYSTEM DIOVISION.png'} alt="Design System" className="w-full h-auto object-cover rounded-lg shadow-lg" />
             </section>
 
             <section className="mb-16">
@@ -256,21 +256,21 @@ const Project1 = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                         <h3 className="text-2xl font-semibold mb-4">Challenge 01: Main Page</h3>
-                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-09%20at%2023_36_25.png'} alt="Main Page Challenge" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
-                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-09%20at%2023_54_10.png'} alt="Main Page Solution" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
+                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot 2024-04-09 at 23_36_25.png'} alt="Main Page Challenge" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
+                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot 2024-04-09 at 23_54_10.png'} alt="Main Page Solution" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
                         <p className="text-lg">Initial design and updated design for the main page.</p>
                     </div>
                     <div>
                         <h3 className="text-2xl font-semibold mb-4">Challenge 02: FAQ Page</h3>
-                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2016_56_24.png'} alt="FAQ Page" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
+                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot 2024-04-10 at 16_56_24.png'} alt="FAQ Page" className="mb-4 w-full h-auto object-cover rounded-lg shadow-lg" />
                         <p className="text-lg">Created a comprehensive FAQ page with easy navigation and search functionality.</p>
                     </div>
                 </div>
                 <div className="mt-8">
                     <h3 className="text-2xl font-semibold mb-4">Challenge 03: Pricing Tables</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2019_47_13.png'} alt="Pricing Table 1" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot%202024-04-10%20at%2019_52_26.png'} alt="Pricing Table 2" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot 2024-04-10 at 19_47_13.png'} alt="Pricing Table 1" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+                        <img src={process.env.PUBLIC_URL + '/Project 1 _ Portfolio_files/Screenshot 2024-04-10 at 19_52_26.png'} alt="Pricing Table 2" className="w-full h-auto object-cover rounded-lg shadow-lg" />
                     </div>
                     <p className="text-lg mt-4">Designed intuitive pricing tables for different video analytics services and cloud storage options.</p>
                 </div>

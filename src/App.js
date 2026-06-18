@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { HashRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
 import Main from './pages/main';
 import Project1 from './pages/project1';
+import Project2 from './pages/project2';
+import Project3 from './pages/project3';
 import { NAME, NAVIGATION_ITEMS } from './constants';
 
 function App() {
@@ -50,6 +52,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/project1" element={<Project1 />} />
+            <Route path="/project2" element={<Project2 />} />
+            <Route path="/project3" element={<Project3 />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
